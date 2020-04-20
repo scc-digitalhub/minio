@@ -149,7 +149,7 @@ export class Login extends React.Component {
                     className="btn openid-btn"
                     clientId={this.state.clientId}
                     authEp={this.state.discoveryDoc.authorization_endpoint}
-                    authScopes={this.state.discoveryDoc.scopes_supported}
+                    authScopes={['openid','user.roles.me']}
                   >
                     Log in with OpenID
                   </OpenIDLoginButton>
